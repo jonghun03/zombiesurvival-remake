@@ -6,6 +6,7 @@ ZZZ        A GAMEMODE FOR GMOD       ZZZ
 ZZZ                                  ZZZ
  ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 
+Remaked                          Haru
 Created and programmed by        William "JetBoom" Moodhe
 E-mail:                          williammoodhe@gmail.com
 Alternate e-mail:                jetboom@noxiousnet.com
