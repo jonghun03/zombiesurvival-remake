@@ -1,0 +1,48 @@
+AddCSLuaFile()
+
+SWEP.PrintName = "'아크바' 돌격소총"
+SWEP.Description = "재장전 속도가 무척이나 빠른 믿음직한 소총. 다른 소총보다 정확하지는 않지만 그럼에도 불구하고 충분히 정확하다."
+
+SWEP.Slot = 2
+SWEP.SlotPos = 0
+
+if CLIENT then
+	SWEP.ViewModelFlip = false
+	SWEP.ViewModelFOV = 50
+
+	SWEP.HUD3DBone = "v_weapon.AK47_Parent"
+	SWEP.HUD3DPos = Vector(-1, -4.5, -4)
+	SWEP.HUD3DAng = Angle(0, 0, 0)
+	SWEP.HUD3DScale = 0.015
+end
+
+SWEP.Base = "weapon_zs_base"
+
+SWEP.HoldType = "ar2"
+
+SWEP.ViewModel = "models/weapons/cstrike/c_rif_ak47.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
+SWEP.UseHands = true
+
+SWEP.ReloadSound = Sound("Weapon_AK47.Clipout")
+SWEP.Primary.Sound = Sound("Weapon_AK47.Single")
+SWEP.Primary.Damage = 21.75
+SWEP.Primary.NumShots = 1
+SWEP.Primary.Delay = 0.12
+
+SWEP.Primary.ClipSize = 30
+SWEP.Primary.Automatic = true
+SWEP.Primary.Ammo = "ar2"
+GAMEMODE:SetupDefaultClip(SWEP.Primary)
+
+SWEP.ConeMax = 2.65
+SWEP.ConeMin = 1.275
+
+SWEP.WalkSpeed = SPEED_SLOW
+
+SWEP.Tier = 3
+
+SWEP.IronSightsPos = Vector(-6.6, 20, 3.1)
+
+GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_MAX_SPREAD, -0.344)
+GAMEMODE:AttachWeaponModifier(SWEP, WEAPON_MODIFIER_MIN_SPREAD, -0.172)
